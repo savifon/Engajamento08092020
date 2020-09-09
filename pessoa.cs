@@ -15,7 +15,7 @@ class Pessoa {
 	public void Envelhercer(int i) {
 		if (i > 0){
 			Idade = Idade+i;
-			if (Altura > 0){
+			if (Altura > 0 && Idade<21){
 				Crescer(i*0.05);
 			}
 		} else {
