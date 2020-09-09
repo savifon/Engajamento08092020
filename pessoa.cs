@@ -15,7 +15,9 @@ class Pessoa {
 	public void Envelhercer(int i) {
 		if (i > 0){
 			Idade = Idade+i;
-			Crescer(i*0.5);
+			if (Altura > 0){
+				Crescer(i*0.05);
+			}
 		} else {
 			Console.WriteLine("IDADE INVÁLIDA");
 		}
